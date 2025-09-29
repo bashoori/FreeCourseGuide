@@ -1,28 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Free Guide – Start Learning Today</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Course Guide</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 40px; }
-    .container { max-width: 600px; margin: auto; }
-    button { background: #0070f3; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; }
-    button:hover { background: #0056b3; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      background: #fff;
+      padding: 40px;
+      max-width: 500px;
+      width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    input[type="email"] {
+      padding: 12px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 14px 30px;
+      font-size: 18px;
+      background: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #005bb5;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Free Course Guide 📘</h1>
-    <p>Learn the top skills to grow your career. Download now & get started today!</p>
-    
-    <!-- Email capture form (Mailchimp/ConvertKit embed) -->
-    <form action="https://your-email-service.com/subscribe" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <br><br>
+    <h1>📘 Free Course Guide</h1>
+    <p>Learn the top skills to grow your career. Sign up below to get instant access!</p>
+
+    <!-- Mailchimp Signup Form -->
+    <form action="YOUR_MAILCHIMP_ACTION_URL" method="post" target="_blank" novalidate>
+      <input type="email" name="EMAIL" placeholder="Enter your email" required>
+      <br>
       <button type="submit">Get Free Guide</button>
     </form>
-    
-    <p>💡 We’ll send your free guide + exclusive offers!</p>
+
+    <p class="note">💡 We’ll send your free guide + exclusive offers!</p>
   </div>
 </body>
 </html>
