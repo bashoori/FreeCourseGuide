@@ -8,42 +8,63 @@
     body { 
       font-family: Arial, sans-serif; 
       text-align: center; 
-      padding: 40px; 
+      margin: 0;
+      padding: 0;
       background: #f9fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
     .container { 
       max-width: 600px; 
-      margin: auto; 
+      width: 90%;
       background: #fff; 
       padding: 40px; 
-      border-radius: 10px; 
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px; 
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
-    h1 { font-size: 28px; margin-bottom: 10px; }
-    p { font-size: 16px; color: #444; margin-bottom: 20px; }
+    h1 { font-size: 32px; margin-bottom: 15px; color: #222; }
+    p { font-size: 16px; color: #444; margin-bottom: 15px; line-height: 1.6; }
     input[type="email"] { 
-      padding: 12px; 
-      width: 80%; 
+      padding: 14px; 
+      width: 85%; 
       border: 1px solid #ccc; 
-      border-radius: 6px; 
+      border-radius: 8px; 
       font-size: 16px; 
+      margin-top: 10px;
     }
     button { 
-      margin-top: 15px; 
-      padding: 14px 30px; 
+      margin-top: 20px; 
+      padding: 14px 32px; 
       font-size: 18px; 
+      font-weight: bold;
       background: #0070f3; 
       color: white; 
       border: none; 
-      border-radius: 6px; 
+      border-radius: 8px; 
       cursor: pointer; 
-      transition: background 0.3s; 
+      transition: all 0.3s ease; 
     }
-    button:hover { background: #0056b3; }
+    button:hover { 
+      background: #0056b3; 
+      transform: translateY(-2px); 
+    }
     .note { 
       margin-top: 20px; 
       font-size: 14px; 
-      color: #777; 
+      color: #666; 
+    }
+    .divider {
+      margin: 20px auto;
+      height: 1px;
+      background: #eee;
+      width: 80%;
+    }
+    .rtl {
+      direction: rtl;
+      font-family: Tahoma, Arial, sans-serif;
+      color: #333;
     }
   </style>
 </head>
@@ -52,12 +73,20 @@
     <h1>📘 Free Course Guide</h1>
     <p>Learn the top skills to grow your career. Sign up below to get instant access!</p>
 
+    <div class="divider"></div>
+
+    <div class="rtl">
+      <p>📘 راهنمای رایگان دوره‌ها</p>
+      <p>مهارت‌های کلیدی را بیاموزید و مسیر شغلی‌تان را سریع‌تر پیش ببرید.</p>
+      <p>همین حالا ثبت‌نام کنید و بلافاصله دسترسی دریافت کنید.</p>
+    </div>
+
     <!-- Mailchimp signup form -->
     <form action="https://bitaashoori.us17.list-manage.com/subscribe/post?u=32ef6074633bf73c4cdbe0da0&amp;id=738e71006d&amp;f_id=005fede3f0" 
           method="post" target="_blank" novalidate>
       <input type="email" name="EMAIL" placeholder="Enter your email" required>
-      <br><br>
-      <button type="submit">Get Free Guide</button>
+      <br>
+      <button type="submit">🚀 Get Free Guide</button>
     </form>
 
     <p class="note">💡 We’ll send your free guide + exclusive offers!</p>
